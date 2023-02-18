@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="animation_path2.css" />
+  </head>
+  <body>
+    <h1>Animation along an offset-path</h1>
+
+    <div id="frameDiv">
+      <span>200x200px</span>
+      <div></div>
+    </div>
+
+    <p>The pink div is animated to follow a path written in SVG syntax.</p>
+    <p>
+      <code>offset-path: path('M20,170 L100,20 L180,100 Z');</code> creates a
+      path that starts in position x,y=20,170 then creates a line to position
+      100,20 and then a line to 180,100 and then a line back to start.
+    </p>
+    <ul>
+      <li>'M' = moveto</li>
+      <li>'L' = lineto</li>
+      <li>'Z' = closepath</li>
+      <li>'H' = horizontal lineto</li>
+      <li>'V' = vertical lineto</li>
+      <li>'C' = curveto</li>
+      <li>'S' = smooth curveto</li>
+      <li>'Q' = quadratic Bézier curve</li>
+      <li>'T' = smooth quadratic Bézier curveto</li>
+      <li>'A' = elliptical Arc</li>
+    </ul>
+  </body>
+</html>

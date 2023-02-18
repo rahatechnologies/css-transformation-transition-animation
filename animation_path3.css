@@ -1,0 +1,24 @@
+  body {
+      background-color: #ccc;
+      padding: 0 50px;
+      width: 100%;
+  }
+
+  svg,
+  .box {
+      position: absolute;
+  }
+
+  .box {
+      animation: move 3s 0ms infinite alternate ease-in-out;
+      background: linear-gradient(#8ebf42 50%, #1c87c9 50%);
+      height: 50px;
+      width: 50px;
+      offset-path: path("M0,380 C9.32293455,260.130586 35.1510596,182.38319 77.484375,146.757812 C140.984348,93.3197459 266.91385,262.809311 332.683594,240.753906 C398.453337,218.698502 450.023437,1.28465307 450.023437,1.28465307");
+  }
+
+  @keyframes move {
+      100% {
+          offset-distance: 50%;
+      }
+  }

@@ -1,0 +1,29 @@
+ #frameDiv {
+     width: 200px;
+     height: 200px;
+     margin: 20px;
+     position: relative;
+     border: solid black 1px;
+     background-color: rgb(205, 242, 205);
+ }
+
+ span {
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+
+ #frameDiv>div {
+     width: 50px;
+     height: 20px;
+     border-radius: 3px 10px 10px 3px;
+     background-color: hotpink;
+     offset-path: path('M20,170 L100,20 L180,100 Z');
+     animation: moveDiv 3s infinite;
+ }
+
+ @keyframes moveDiv {
+     100% {
+         offset-distance: 100%;
+     }
+ }
